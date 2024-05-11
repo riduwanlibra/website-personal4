@@ -313,6 +313,37 @@
                     </div>
                     <button href="#" class="btn btn-border" type="submit">Mempekerjakan Saya <span class="glyphicon glyphicon-send"></span></button>
                 </form>
+		    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+
+function sendEmail(){
+
+Email.send({
+
+Host: "smtp.gmail.com",
+
+Username: "riduwanlibra1@gmail",
+
+Password: "PSHT1922",
+
+To: 'riduwanlibra1@gmail.com',
+
+From: document.getElementById("email").value,
+
+Subject: "New Contact Form Enquiry",
+
+Body: "And this is the body"
+
+}).then(
+
+message => alert(message)
+
+);
+
+}
+
+</script>
             </div>
         </section><!-- /.section-form -->
 
